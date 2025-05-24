@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Template Electron APP</title>
 
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/styles.css" />
 </head>
-<body>
-  <h1>Template Electron APP</h1>
 
-  <!-- Arquivo para manipular nosso DOM -->
+<body>
+  <div>
+    <h1>📝 Bloco de Notas</h1>
+    <label for="nota">Nota:</label>
+
+    <textarea id="notaTexto" placeholder="Digite sua nota aqui..."></textarea>
+
+    <!-- Corrigi o botão: 'onclique' para 'onclick', e nome da função em camelCase -->
+    <button onclick="salvarNota()">Salvar Nota</button>
+
+    <h2>Notas Salvas</h2>
+    <ul id="listaNotas"></ul>
+  </div>
+
   <script src="../js/script.js"></script>
 </body>
+
 </html>
